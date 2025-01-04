@@ -18,10 +18,3 @@
 - **Notifications**: Expo-Notifications
 - **State Management**: Redux (Global State), Context API (Local State)
 
-## Installation
-
-### Prerequisites
-- **Node.js**: Make sure you have Node.js installed. You can download it [here](https://nodejs.org/).
-- **Expo CLI**: Install Expo CLI globally by running the following command:
-  ```bash
-  npm install -g expo-cli
