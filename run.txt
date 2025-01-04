@@ -1,0 +1,38 @@
+
+ 
+
+      {/* Payment Method */}
+
+
+      {/* Total and Place Order Button */}
+      <View style={styles.footer}>
+        <Text style={styles.totalText}>Total</Text>
+        <Text style={styles.totalAmount}>Rs 2,907.99</Text>
+        <TouchableOpacity style={styles.placeOrderButton}>
+          <Text style={styles.placeOrderText}>Place Order</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+
+    import { nanoid } from 'nanoid'; // For generating unique IDs
+
+
+
+            //   Alert.alert(
+            //     '🎉 Order Completed! 🎉',
+            //     'Thank you for your patience. Your order has been completed. Enjoy your meal!',
+            //     [
+            //       { text: 'OK', style: 'cancel', onPress: () => console.log('OK Pressed') },
+            //     ],
+            //     { cancelable: true } // Dismiss with touch outside or back button
+            // );
+
+                        Alert.alert(
+              '❌ Order Cancelled ❌',
+              'We are sorry to inform you that your order has been cancelled. Please contact support for further assistance.',
+              [
+                  { text: 'Contact Support', onPress: handleSupportRedirect },
+                  { text: 'OK', style: 'cancel', onPress: () => console.log('OK Pressed') },
+              ],
+              { cancelable: true } // Allows dismissal with touch outside or back button
+          );
